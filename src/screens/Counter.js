@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { View, Text, Button } from "react-native";
-import { increment, decNumber } from "../redux/action/counter";
+import { increment, decNumber, Reset } from "../redux/action/counter";
 import { useSelector, useDispatch } from "react-redux";
 
 export const Counter = () => {
@@ -22,6 +22,12 @@ export const Counter = () => {
           title="DECREMENT"
           color="#841584"
           onPress={() => dispatch(decNumber())}
+        />
+        <Text></Text>
+        <Button
+          title="RESET"
+          color="#841584"
+          onPress={() => dispatch(Reset())}
         />
       </View>
     </View>

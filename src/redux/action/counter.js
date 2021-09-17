@@ -1,5 +1,5 @@
-import { INCREMENT } from "./types";
-import { DECREMENT } from "./types";
+import { INCREMENT,DECREMENT,RESET } from "./types";
+// import {  } from "./types";
 
 export const increment = () => {
   return {
@@ -10,5 +10,12 @@ export const increment = () => {
 export const decNumber = () => {
   return {
     type: DECREMENT,
+  };
+};
+
+
+export const Reset = () => {
+  return{
+    type: RESET,
   };
 };
